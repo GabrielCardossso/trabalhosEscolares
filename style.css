@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent: #4f8cff;
+}
+
+body.portuguese { --accent: #d35454; }
+body.mathematics { --accent: #4f8cff; }
+body.geography { --accent: #2ecc71; }
+body.history { --accent: #e67e22; }
+body.chemistry { --accent: #9b59b6; }
+body.physics { --accent: #1abc9c; }
+body.biology { --accent: #27ae60; }
+body.english { --accent: #2980b9; }
+body.spanish { --accent: #c0392b; }
+body.physicalEducation { --accent: #f1c40f; }
+body.philosophy { --accent: #8e44ad; }
+body.sociology { --accent: #16a085; }
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f2f3f5;
+    color: #2d2d2d;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #ffffff;
+    padding: 22px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-bottom: 3px solid var(--accent);
+    flex-shrink: 0;
+}
+
+.layout {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+}
+
+aside {
+    width: 260px;
+    background: #ffffff;
+    padding: 25px 20px;
+    border-right: 1px solid #e0e0e0;
+    overflow-y: auto;
+}
+
+aside h2 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 8px;
+}
+
+aside a {
+    display: block;
+    padding: 9px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #555;
+    font-size: 0.95rem;
+    transition: 0.2s ease;
+}
+
+aside a:hover {
+    background: #f0f0f0;
+}
+
+aside a.active {
+    background: var(--accent);
+    color: #ffffff;
+}
+
+main {
+    flex: 1;
+    padding: 50px;
+    overflow: hidden;
+}
+
+main h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+main p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.works-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.works-list li {
+    margin-bottom: 12px;
+}
+
+.works-list a {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.works-list a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s ease;
+}
+
+.logo:hover {
+    color: var(--accent);
+}
+
+footer {
+    background: #ffffff;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.85rem;
+    border-top: 1px solid #e0e0e0;
+    color: #777;
+    flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        max-height: 200px;
+    }
+
+    main {
+        padding: 30px;
+    }
+}

@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body class="biology">
 
     <header>
-        <h1>Biologia</h1>
-    </header>
+    <a href="../index.html" class="logo">
+        Portfólio Escolar
+    </a>
+</header>
 
     <div class="layout">
 
@@ -21,7 +23,7 @@
                 <ul>
                     <li><a href="portuguese.html">Português</a></li>
                     <li><a href="mathematics.html">Matemática</a></li>
-                    <li><a href="geography.html" class="active">Geografia</a></li>
+                    <li><a href="geography.html">Geografia</a></li>
                     <li><a href="history.html">História</a></li>
                     <li><a href="chemistry.html">Química</a></li>
                     <li><a href="physics.html">Física</a></li>
@@ -55,6 +57,17 @@
         <p>Desenvolvido por Gabriel Cardoso</p>
         <a href="https://www.instagram.com/gabrielcrds_09/" target="_blank">Instagram</a>
     </footer>
+
+    <script>
+const links = document.querySelectorAll("aside a");
+const currentPage = window.location.pathname;
+
+links.forEach(link => {
+    if (currentPage.includes(link.getAttribute("href"))) {
+        link.classList.add("active");
+    }
+});
+</script>
 
 </body>
 </html>
