@@ -11,8 +11,11 @@
 
     <!-- Cabeçalho -->
     <header>
-        <h1>Portfólio Escolar</h1>
-    </header>
+    <span class="menu-btn" onclick="toggleMenu()">☰</span>
+    <a href="/trabalhosEscolares/" class="logo">
+        Portfólio Escolar
+    </a>
+</header>
 
     <!-- Área principal que divide sidebar + conteúdo -->
     <div class="layout">
@@ -60,6 +63,12 @@
         <p>Desenvolvido por Gabriel Cardoso</p>
         <a href="https://www.instagram.com/gabrielcrds_09/" target="_blank">Instagram</a>
     </footer>
+
+    <script>
+function toggleMenu() {
+    document.querySelector("aside").classList.toggle("open");
+}
+</script>
 
 </body>
 </html>

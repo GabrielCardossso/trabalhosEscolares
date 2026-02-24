@@ -166,3 +166,51 @@ footer {
         padding: 30px;
     }
 }
+
+@media (max-width: 900px) {
+
+    html, body {
+        overflow: auto;
+    }
+
+    body {
+        height: auto;
+    }
+
+    .layout {
+        flex-direction: column;
+    }
+
+    aside {
+        position: fixed;
+        top: 0;
+        left: -260px;
+        height: 100%;
+        width: 260px;
+        background: white;
+        transition: 0.3s ease;
+        z-index: 1000;
+        border-right: 1px solid #e0e0e0;
+    }
+
+    aside.open {
+        left: 0;
+    }
+
+    main {
+        padding: 25px;
+        overflow: visible;
+    }
+
+    .menu-btn {
+        display: block;
+        position: absolute;
+        left: 20px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+.menu-btn {
+    display: none;
+}
