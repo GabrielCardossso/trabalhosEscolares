@@ -19,14 +19,6 @@ lateral e visualizar os trabalhos organizados por disciplina.
 
 ------------------------------------------------------------------------
 
-## 🗂 Estrutura do Projeto
-
-portfolioEscola/ │ ├── index.html ├── style.css ├── subjects/ │ ├──
-geography.html │ ├── history.html │ └── ... └── works/ ├── geography/
-└── history/
-
-------------------------------------------------------------------------
-
 ## 🛠 Tecnologias Utilizadas
 
 -   HTML5
