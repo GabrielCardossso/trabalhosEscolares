@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +12,18 @@
 
     <!-- Cabeçalho -->
     <header>
-    <span class="menu-btn" onclick="toggleMenu()">☰</span>
-    <a href="/trabalhosEscolares/" class="logo">
-        Portfólio Escolar
-    </a>
-</header>
+        <button class="menu-btn" onclick="toggleMenu()">Matérias</button>
 
-    <!-- Área principal que divide sidebar + conteúdo -->
+        <a href="/trabalhosEscolares/" class="logo">
+            Portfólio Escolar
+        </a>
+
+    </header>
+
+    <!-- Layout principal -->
     <div class="layout">
 
-        <!-- Barra lateral -->
+        <!-- Sidebar -->
         <aside>
             <h2>Matérias</h2>
             <nav>
@@ -43,18 +46,26 @@
 
         <!-- Conteúdo principal -->
         <main>
-            <h2>Sobre o Projeto</h2>
-            <p>
-                Olá, meu nome é Gabriel Cardoso.
-                Desenvolvi este site como uma forma de praticar programação
-                e organizar meus trabalhos escolares de maneira digital.
-            </p>
+    <section class="main-content">
+        <h1>Bem-vindo</h1>
+        <h3>Organização, aprendizado e evolução</h3>
 
-            <p>
-                Aqui você poderá navegar pelas matérias e visualizar
-                os trabalhos desenvolvidos ao longo do ano letivo.
-            </p>
-        </main>
+        <p>
+            Este site foi criado para organizar meus trabalhos escolares de forma digital e estruturada.
+            Aqui concentro as atividades desenvolvidas ao longo do ano em cada matéria.
+        </p>
+
+        <p>
+            Além de servir como registro acadêmico, o site também representa minha prática em programação
+            e minha evolução no desenvolvimento de projetos reais.
+        </p>
+
+        <p>
+            A ideia é manter tudo centralizado, acessível e visualmente organizado,
+            acompanhando meu crescimento tanto na escola quanto na área de tecnologia.
+        </p>
+    </section>
+</main>
 
     </div>
 
@@ -65,10 +76,12 @@
     </footer>
 
     <script>
-function toggleMenu() {
-    document.querySelector("aside").classList.toggle("open");
-}
-</script>
+        /* ====== MENU MOBILE ====== */
+        function toggleMenu() {
+            document.querySelector("aside").classList.toggle("open");
+        }
+    </script>
 
 </body>
+
 </html>

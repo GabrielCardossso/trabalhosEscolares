@@ -19,6 +19,14 @@ lateral e visualizar os trabalhos organizados por disciplina.
 
 ------------------------------------------------------------------------
 
+## 🌐 Acesse o Projeto
+
+O site está hospedado via GitHub Pages:
+
+https://gabrielcardossso.github.io/trabalhosEscolares/
+
+------------------------------------------------------------------------
+
 ## 🛠 Tecnologias Utilizadas
 
 -   HTML5
@@ -26,14 +34,6 @@ lateral e visualizar os trabalhos organizados por disciplina.
 -   Git
 -   GitHub
 -   GitHub Pages
-
-------------------------------------------------------------------------
-
-## 🌐 Acesse o Projeto
-
-O site está hospedado via GitHub Pages:
-
-https://gabrielcardossso.github.io/trabalhosEscolares/
 
 ------------------------------------------------------------------------
 
